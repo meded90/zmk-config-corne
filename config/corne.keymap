@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define QWERTY 0
-#define NUMB 1
+#define SYMBOL 1
 #define NAVI 2
 #define ADJUST 3
 
@@ -33,13 +33,13 @@
 
         default_layer {
             // .--------------------------------------------------------------.       .-----------------------------------------------------------.
-            // |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    \     |
+            // |   ESC        |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    [     |
             // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
             // |   CTRL/Tab   |    A    |    S   |   D    |    F    |    G    |       |   H   |    J    |    K    |    L    |     ;    |     '    |
             // |--------------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-            // |   SHFT       |    Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    | ` | ALT  |
+            // |   SHFT       |  ^ | Z  |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    | ` | ALT  |
             // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
-            //                                   |  GUI   |   MO1   |   ENT   |       |  SPC  |   BKSP  |  CAPS   |
+            //                                   |   ⌥    |    ⌘    |  L3|ENT |       |  SPC  | L2|BKSP | L1|GLOBE|
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
             label = "QWERTY";
@@ -47,7 +47,7 @@
 &kp ESC        &kp Q               &kp W  &kp E     &kp R     &kp T        &kp Y      &kp U            &kp I        &kp O    &kp P     &kp LBKT
 &mt LCTRL TAB  &kp A               &kp S  &kp D     &kp F     &kp G        &kp H      &kp J            &kp K        &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B        &kp N      &kp M            &kp COMMA    &kp DOT  &kp FSLH  &mt RALT GRAVE
-                                          &kp LALT  &kp LGUI  &lt 3 RET    &kp SPACE  &lt 2 BACKSPACE  &lt 1 GLOBE
+                                          &kp LALT  &kp LGUI  &lt ADJUST RET    &kp SPACE  &lt NAVI BACKSPACE  &lt SYMBOL GLOBE
             >;
         };
 
@@ -104,7 +104,7 @@
 
             label = "CONFIG";
             bindings = <
-&reset      &trans        &trans        &trans        &trans        &trans          &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &reset
+&trans      &trans        &trans        &trans        &trans        &trans          &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &reset
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans             &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans             &trans  &trans
