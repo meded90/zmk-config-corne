@@ -87,10 +87,10 @@
 
             label = "ADJUST";
             bindings = <
-&kp LG(LS(N4))  &trans  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN       &kp HOME               &kp CARET           &kp PAGE_UP          &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME  &kp LG(LS(N4))
-&trans          &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW     &kp END                &kp MINUS           &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END   &trans
-&out OUT_TOG    &trans  &trans          &trans          &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)    &kp LC(LEFT_ARROW)  &kp LC(RIGHT_ARROW)  &trans          &trans           &trans    &out OUT_TOG
-                                        &trans          &trans              &trans                 &trans              &trans               &trans
+&kp DOT          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LA(LC(T))  &kp LC(T)        &kp LA(W)  &kp PAGE_UP       &kp UP_ARROW    &kp PAGE_DOWN      &kp HOME  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LA(D)      &kp LA(ENTER)    &kp LA(D)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END   &trans
+&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LA(W)      &kp LC(SPACE)    &trans     &kp LS(LA(LEFT))  &kp LC(SEMI)    &kp LA(LS(RIGHT))  &trans    &trans
+                                                   &trans           &trans         &trans           &trans     &trans            &trans
             >;
         };
 
@@ -107,10 +107,10 @@
 
             label = "CONFIG";
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans             &trans  &trans  &trans  &trans  &trans
-                                        &trans        &trans        &trans          &trans             &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans          &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans
+&out OUT_TOG  &trans        &trans        &trans        &trans        &trans          &kp K_MUTE         &trans  &trans  &trans  &trans  &trans
+                                          &trans        &trans        &trans          &trans             &trans  &trans
             >;
         };
     };
