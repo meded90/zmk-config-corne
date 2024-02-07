@@ -87,10 +87,10 @@
 
             label = "ADJUST";
             bindings = <
-&kp DOT          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LA(LC(T))  &kp LC(T)        &kp LA(W)  &kp PAGE_UP       &kp UP_ARROW    &kp PAGE_DOWN      &kp HOME  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LA(D)      &kp LA(ENTER)    &kp LA(D)  &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END   &trans
-&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LA(W)      &kp LC(SPACE)    &trans     &kp LS(LA(LEFT))  &kp LC(SEMI)    &kp LA(LS(RIGHT))  &trans    &trans
-                                                   &trans           &trans         &trans           &trans     &trans            &trans
+&kp DOT          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LA(LC(T))  &kp LC(T)        &trans  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)      &kp HOME  &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LA(D)      &kp LA(ENTER)    &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END   &trans
+&trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LA(W)      &kp LC(SPACE)    &trans  &kp LS(LA(LEFT))    &kp LC(SEMI)    &kp LA(LS(RIGHT))  &trans    &trans
+                                                   &trans           &trans         &trans           &trans  &trans              &trans
             >;
         };
 
