@@ -45,7 +45,6 @@
             //                                   |   ⌥    |    ⌘    |  L3|ENT |       |  SPC  | L2|BKSP | L1|GLOBE|
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
-            label = "QWERTY";
             bindings = <
 &kp ESC    &kp Q               &kp W  &kp E     &kp R     &kp T             &kp Y      &kp U               &kp I             &kp O    &kp P     &kp LBKT
 &kp TAB    &kp A               &kp S  &kp D     &kp F     &kp G             &kp H      &kp J               &kp K             &kp L    &kp SEMI  &kp SQT
@@ -65,7 +64,6 @@
             //                                   |        |         |         |       |       |         |         |
             //                                   '--------+---------+---------'       '-------+---------+---------'
 
-            label = "SYMBOL";
             bindings = <
 &trans  &kp EXCL   &kp AT_SIGN  &kp F14   &kp F15       &kp TILDE    &kp F17  &kp F18  &kp QUESTION  &kp F19  &kp F20    &kp F23
 &trans  &kp F16    &kp LPAR     &kp RPAR  &kp KP_EQUAL  &kp F2       &kp F3   &kp F4   &kp F5        &kp F6   &kp F7     &kp F8
@@ -85,7 +83,6 @@
             //                                   |  GUI   |   MO3    |          |       |         |          |         |
             //                                   '--------+----------+----------'       '---------+----------+---------'
 
-            label = "ADJUST";
             bindings = <
 &kp DOT          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LA(LC(T))  &kp LC(T)        &trans  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)      &kp HOME  &trans
 &kp KP_NUMBER_0  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LA(D)      &kp LA(ENTER)    &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END   &trans
@@ -105,7 +102,6 @@
             //                             |        |         |         |       |        |        |         |
             //                             '--------+---------+---------'       '--------+--------+---------'
 
-            label = "CONFIG";
             bindings = <
 &trans        &trans        &trans        &trans        &trans        &trans          &kp C_VOLUME_UP    &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_VOLUME_DOWN  &trans  &trans  &trans  &trans  &trans
