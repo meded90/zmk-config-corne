@@ -8,11 +8,10 @@
  * https://nickcoutsos.github.io/keymap-editor/
  */
 
+#include "mouse.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include "mouse.dtsi"
-
 
 #define QWERTY 0
 #define SYMBOL 1
@@ -45,12 +44,13 @@
             // '---------------------------------+--------+---------+---------+       |-------+---------+---------+-------------------------------'
             //                                   |   ⌥    |    ⌘    |  L3|ENT |       |  SPC  | L2|BKSP | L1|GLOBE|
             //                                   '--------+---------+---------'       '-------+---------+---------'
+
             label = "QWERTY";
             bindings = <
-&kp ESC             &kp Q  &kp W  &kp E     &kp R     &kp T             &kp Y      &kp U               &kp I            &kp O    &kp P     &kp LBKT
-&kp TAB             &kp A  &kp S  &kp D     &kp F     &kp G             &kp H      &kp J               &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT      &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B             &kp N      &kp M               &kp COMMA        &kp DOT  &kp FSLH  &mt RALT GRAVE
-                                  &kp LALT  &kp LGUI  &lt ADJUST RET    &kp SPACE  &lt NAVI BACKSPACE  &lt SYMBOL CAPS
+&kp ESC         &kp Q               &kp W  &kp E     &kp R     &kp T             &kp Y      &kp U               &kp I            &kp O    &kp P     &kp LBKT
+&kp TAB         &kp A               &kp S  &kp D     &kp F     &kp G             &kp H      &kp J               &kp K            &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B             &kp N      &kp M               &kp COMMA        &kp DOT  &kp FSLH  &mt RALT GRAVE
+                                           &kp LALT  &kp LGUI  &lt ADJUST RET    &kp SPACE  &lt NAVI BACKSPACE  &lt SYMBOL CAPS
             >;
         };
 
@@ -87,10 +87,10 @@
 
             label = "ADJUST";
             bindings = <
-&kp DOT  &kp N7  &kp N8  &kp N9  &kp LA(LC(T))  &kp LC(T)        SCROLL_UP  &kp LA(LS(LEFT_ARROW))  &kp UP_ARROW    &kp LS(LA(RIGHT))  &kp HOME      &kp BACKSPACE
-&trans   &kp N4  &kp N5  &kp N6  &kp LA(D)      &kp LA(ENTER)    &trans  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END       &trans
-&kp N0   &kp N1  &kp N2  &kp N3  &kp LA(W)      &kp LC(SPACE)    &trans  &kp LA(LEFT)            &kp LC(SEMI)    &kp LA(RIGHT)      &kp LC(LEFT)  &kp LC(RIGHT)
-                         &trans  &trans         &trans           &trans  &trans                  &trans
+&kp DOT  &kp N7  &kp N8  &kp N9     &kp LA(LC(T))  &kp LC(T) SCROLL_UP    &kp LA(LS(LEFT_ARROW))  &kp UP_ARROW    &kp LS(LA(RIGHT))  &kp HOME      &kp BACKSPACE  &trans
+&kp N4   &kp N5  &kp N6  &kp LA(D)  &kp LA(ENTER)  &trans                 &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END       &trans         &kp N0
+&kp N1   &kp N2  &kp N3  &kp LA(W)  &kp LC(SPACE)  &trans                 &kp LA(LEFT)            &kp LC(SEMI)    &kp LA(RIGHT)      &kp LC(LEFT)  &kp LC(RIGHT)  &trans
+                         &trans     &trans         &trans                 &trans                  &trans
             >;
         };
 
@@ -107,10 +107,10 @@
 
             label = "CONFIG";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_UP    &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1
-&trans  &trans  &trans  &trans  &trans  &trans    &kp C_VOLUME_DOWN  &trans  &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 3
-&trans  &trans  &trans  &trans  &trans  &trans    &kp K_MUTE         &trans  &trans  &trans  &bt BT_SEL 4  &bt BT_CLR
-                        &trans  &trans  &trans    &trans             &trans  &trans
+&kp LA(LC(N1))  &kp LA(LC(N2))  &kp LA(LC(N3))  &kp LA(LC(N4))  &kp LA(LC(R))  &kp LA(LC(N5))    &kp C_VOLUME_UP    &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1
+&trans          &trans          &kp LA(LC(W))   &trans          &trans         &trans            &kp C_VOLUME_DOWN  &trans  &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 3
+&trans          &trans          &trans          &trans          &trans         &trans            &kp K_MUTE         &trans  &trans  &trans  &bt BT_SEL 4  &bt BT_CLR
+                                                &trans          &trans         &trans            &trans             &trans  &trans
             >;
         };
     };
