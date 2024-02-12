@@ -8,7 +8,6 @@
  * https://nickcoutsos.github.io/keymap-editor/
  */
 
-#include "mouse.dtsi"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
