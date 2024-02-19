@@ -49,7 +49,7 @@
 &kp ESC            &kp Q               &kp W  &kp E     &kp R     &kp T        &kp Y        &kp U  &kp I            &kp O    &kp P     &kp LBKT
 &mt LG(SPACE) TAB  &kp A               &kp S  &kp D     &kp F     &kp G        &kp H        &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
 &kp LEFT_SHIFT     &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B        &kp N        &kp M  &kp COMMA        &kp DOT  &kp FSLH  &mt RALT GRAVE
-                                              &kp LALT  &kp LGUI  &lt 2 RET    &lt 2 SPACE  &to 1  &lt 3 BACKSPACE
+                                              &kp LALT  &kp LGUI  &lt 2 RET    &lt 2 SPACE  &sl 1  &lt 3 BACKSPACE
             >;
         };
 
