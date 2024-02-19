@@ -46,10 +46,10 @@
 
             label = "QWERTY";
             bindings = <
-&kp ESC         &kp Q               &kp W  &kp E     &kp R     &kp T             &kp Y      &kp U               &kp I                 &kp O    &kp P     &kp LBKT
-&kp TAB         &kp A               &kp S  &kp D     &kp F     &kp G             &kp H      &kp J               &kp K                 &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B             &kp N      &kp M               &kp COMMA             &kp DOT  &kp FSLH  &mt RALT GRAVE
-                                           &kp LALT  &kp LGUI  &lt ADJUST RET    &kp SPACE  &lt NAVI BACKSPACE  &lt SYMBOL LG(SPACE)
+&kp ESC            &kp Q               &kp W  &kp E     &kp R     &kp T        &kp Y        &kp U   &kp I                &kp O    &kp P     &kp LBKT
+&mt LG(SPACE) TAB  &kp A               &kp S  &kp D     &kp F     &kp G        &kp H        &kp J   &kp K                &kp L    &kp SEMI  &kp SQT
+&kp LEFT_SHIFT     &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B        &kp N        &kp M   &kp COMMA            &kp DOT  &kp FSLH  &mt RALT GRAVE
+                                              &kp LALT  &kp LGUI  &lt 2 RET    &lt 2 SPACE  &tog 1  &lt 3 LG(BACKSPACE)
             >;
         };
 
@@ -68,7 +68,7 @@
             bindings = <
 &trans  &kp EXCL   &kp AT_SIGN  &kp F14   &kp F15       &kp TILDE    &kp F17  &kp F18  &kp QUESTION  &kp F19  &kp F20    &kp F23
 &trans  &kp F16    &kp LPAR     &kp RPAR  &kp KP_EQUAL  &kp F2       &kp F3   &kp F4   &kp F5        &kp F6   &kp F7     &kp F8
-&trans  &kp UNDER  &kp MINUS    &kp PLUS  &kp STAR      &kp CARET    &kp F10  &kp F2   &kp F1        &kp F16  &kp SLASH  &kp LC(F9)
+&trans  &kp UNDER  &kp MINUS    &kp PLUS  &kp STAR      &kp CARET    &kp F10  &kp F2   &kp F1        &kp F16  &kp SLASH  &kp F9
                                 &trans    &trans        &trans       &trans   &trans   &trans
             >;
         };
