@@ -46,10 +46,10 @@
 
             label = "QWERTY";
             bindings = <
-&kp ESC            &kp Q               &kp W  &kp E     &kp R     &kp T        &kp Y        &kp U  &kp I            &kp O    &kp P     &kp LBKT
-&mt LG(SPACE) TAB  &kp A               &kp S  &kp D     &kp F     &kp G        &kp H        &kp J  &kp K            &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT     &mt LEFT_CONTROL Z  &kp X  &kp C     &kp V     &kp B        &kp N        &kp M  &kp COMMA        &kp DOT  &kp FSLH  &mt RALT GRAVE
-                                              &kp LALT  &kp LGUI  &lt 2 RET    &lt 2 SPACE  &sl 1  &lt 3 BACKSPACE
+&kp ESC        &kp Q               &kp W               &kp E           &kp R           &kp T        &kp Y        &kp U            &kp I            &kp O                &kp P                 &kp LBKT
+&kp TAB        &hm LEFT_SHIFT A    &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G        &kp H        &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMI  &kp SQT
+&kp LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V           &kp B        &kp N        &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp GRAVE
+                                                       &kp LALT        &kp LGUI        &lt 2 RET    &lt 2 SPACE  &sl 1            &lt 3 BACKSPACE
             >;
         };
 
@@ -66,7 +66,7 @@
 
             label = "SYMBOL";
             bindings = <
-&kp F11  &kp EXCL   &kp AT_SIGN  &kp F14   &kp F15       &kp TILDE    &kp F17  &kp F18  &kp QUESTION  &kp F19  &kp F20    &kp F23
+&kp F11  &kp EXCL   &kp LA(F20)  &kp F14   &kp F15       &kp TILDE    &kp F17  &kp F18  &kp QUESTION  &kp F19  &kp F20    &kp F23
 &trans   &kp F16    &kp LPAR     &kp RPAR  &kp KP_EQUAL  &kp F2       &kp F3   &kp F4   &kp F5        &kp F6   &kp F7     &kp F8
 &trans   &kp UNDER  &kp MINUS    &kp PLUS  &kp STAR      &kp CARET    &kp F10  &kp F2   &kp F1        &kp F16  &kp SLASH  &kp F9
                                  &trans    &trans        &trans       &trans   &trans   &trans
@@ -86,10 +86,10 @@
 
             label = "ADJUST";
             bindings = <
-&kp DOT  &kp N7  &kp N8  &kp N9  &kp LA(LC(T))  &kp LC(T)        &trans  &kp LA(LS(LEFT_ARROW))  &kp UP_ARROW    &kp LS(LA(RIGHT))  &kp HOME      &kp BACKSPACE
-&kp N0   &kp N4  &kp N5  &kp N6  &kp LA(D)      &kp LA(ENTER)    &trans  &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END       &trans
-&trans   &kp N1  &kp N2  &kp N3  &kp LA(W)      &kp LC(SPACE)    &trans  &kp LA(LEFT)            &kp LC(SEMI)    &kp LA(RIGHT)      &kp LC(LEFT)  &kp LC(RIGHT)
-                         &trans  &trans         &trans           &trans  &trans
+&kp DOT  &kp N7  &kp N8  &kp N9  &kp LA(LC(T))  &kp LC(T)        &kp LA(LC(LG(Y)))  &kp LC(LEFT_ARROW)  &kp UP_ARROW    &kp LC(RIGHT)      &kp HOME      &kp BACKSPACE
+&kp N0   &kp N4  &kp N5  &kp N6  &kp LA(D)      &kp LA(ENTER)    &kp LA(LC(LG(H)))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW    &kp END       &trans
+&trans   &kp N1  &kp N2  &kp N3  &kp LA(W)      &kp LC(SPACE)    &trans             &kp LA(LS(LEFT))    &kp LC(SEMI)    &kp LA(LS(RIGHT))  &kp LC(LEFT)  &kp LC(RIGHT)
+                         &trans  &trans         &trans           &trans             &trans
             >;
         };
 
