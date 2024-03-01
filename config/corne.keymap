@@ -66,10 +66,10 @@
 
             label = "SYMBOL";
             bindings = <
-&kp F11     &kp EXCL   &kp LC(F20)  &kp F14   &kp F15       &kp TILDE    &kp F17  &kp F18  &kp QUESTION  &kp F19  &kp F20    &kp F23
-&trans      &kp F16    &kp LPAR     &kp RPAR  &kp KP_EQUAL  &kp F2       &kp F3   &kp F4   &kp F5        &kp F6   &kp F7     &kp F8
-&kp RSHIFT  &kp UNDER  &kp MINUS    &kp PLUS  &kp STAR      &kp CARET    &kp F10  &kp F2   &kp F1        &kp F16  &kp SLASH  &kp F9
-                                    &trans    &trans        &trans       &trans   &trans   &trans
+&kp F11     &kp EXCL   &kp F21    &kp F14   &kp F15       &kp TILDE    &kp F17  &kp F18  &kp QUESTION  &kp F19  &kp F20    &kp F23
+&trans      &kp F16    &kp LPAR   &kp RPAR  &kp KP_EQUAL  &kp F2       &kp F3   &kp F4   &kp F5        &kp F6   &kp F7     &kp F8
+&kp RSHIFT  &kp UNDER  &kp MINUS  &kp PLUS  &kp STAR      &kp CARET    &kp F10  &kp F2   &kp F1        &kp F16  &kp SLASH  &kp F9
+                                  &trans    &trans        &trans       &trans   &trans   &trans
             >;
         };
 
