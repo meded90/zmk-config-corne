@@ -46,10 +46,10 @@
 
             label = "QWERTY";
             bindings = <
-&kp ESC        &kp Q               &kp W               &kp E           &kp R           &kp T        &kp Y        &kp U            &kp I            &kp O                &kp P                 &kp LBKT
-&kp TAB        &hm LEFT_SHIFT A    &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G        &kp H        &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMI  &kp SQT
-&kp LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V           &kp B        &kp N        &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp GRAVE
-                                                       &kp LALT        &kp LGUI        &lt 2 RET    &lt 2 SPACE  &sl 1            &lt 3 BACKSPACE
+&kp ESC        &kp Q               &kp W               &kp E           &kp R       &kp T        &kp Y        &kp U       &kp I            &kp O               &kp P                 &kp LBKT
+&kp TAB        &mt LEFT_SHIFT A    &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt RGUI F  &kp G        &kp H        &mt RGUI J  &mt RIGHT_ALT K  &mt LEFT_CONTROL L  &mt RIGHT_SHIFT SEMI  &kp SQT
+&kp LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V       &kp B        &kp N        &kp M       &kp COMMA        &kp DOT             &kp FSLH              &kp GRAVE
+                                                       &kp LALT        &kp LGUI    &lt 2 RET    &lt 2 SPACE  &sl 1       &lt 3 BACKSPACE
             >;
         };
 
