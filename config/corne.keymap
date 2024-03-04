@@ -28,6 +28,24 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+        hml: homewrow_mods_left {
+              compatible = "zmk,behavior-hold-tap";
+              #binding-cells = <2>;
+              label = "HOMEROW_MODS_LEFT_HAND";
+              bindings = <&kp>, <&kp>;
+              tapping-term-ms = <200>;
+
+              hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
+            };
+            hmr: homewrow_mods_right {
+              compatible = "zmk,behavior-hold-tap";
+              #binding-cells = <2>;
+              label = "HOMEROW_MODS_RIGHT_HAND";
+              bindings = <&kp>, <&kp>;
+              tapping-term-ms = <200>;
+
+              hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+            };
     };
 
     keymap {
@@ -47,7 +65,7 @@
             label = "QWERTY";
             bindings = <
 &kp ESC                   &kp Q               &kp W               &kp E           &kp R       &kp T        &kp Y        &kp U       &kp I            &kp O               &kp P                 &kp LBKT
-&kp TAB                   &hml LEFT_SHIFT A   &hml LEFT_CONTROL S &hml LEFT_ALT D &hml RGUI F  &p G        &kp H        &hml RGUI J  &ml RIGHT_ALT K &hml LEFT_CONTROL L &hml RIGHT_SHIFT SEMI &kp SQT
+&kp TAB                   &hml LEFT_SHIFT A   &hml LEFT_CONTROL S &hml LEFT_ALT D &hml RGUI F  &p G        &kp H        &hmr RGUI J &hmr RALT K      &hmr RCTRL L       &hmr RSHFT SEMI       &kp SQT
 &mt LEFT_SHIFT LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V       &kp B        &kp N        &kp M       &kp COMMA        &kp DOT             &kp FSLH              &kp GRAVE
                                                                   &kp LALT        &kp LGUI    &lt 2 RET    &lt 2 SPACE  &sl 1       &lt 3 BACKSPACE
             >;
