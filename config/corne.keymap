@@ -28,28 +28,27 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
     };
 
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
-        // .---------------------------------------------------------.       .-----------------------------------------------------------.
-        // |    ⎋    |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    [     |
-        // |---------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-        // |    ⇥    |  ⇧/A    |  ⌃/S   |  ⌥/D   |  ⌘/F    |    G    |       |   H   |  ⌘/J    |  ⌥/K    |  ⌃/L    |  ⇧/;     |     '    |
-        // |---------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
-        // |   ⇧/🌐  |  ^/Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |  `/⌥     |
-        // '---------------------------------+--------+----+---------+       |-------+---------+---------+-------------------------------'
-        //                                   |   ⌥    |   ⌘  |  L3/⏎ |       |  L2/␣ |  L1  |  L3/⌫  |
-        //                                   '--------+------+-------'       '-------+------+--------'
+            // .---------------------------------------------------------.       .-----------------------------------------------------------.
+            // |    ⎋    |    Q    |    W   |   E    |    R    |    T    |       |   Y   |    U    |    I    |    O    |     P    |    [     |
+            // |---------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
+            // |    ⇥    |  ⇧/A    |  ⌃/S   |  ⌥/D   |  ⌘/F    |    G    |       |   H   |  ⌘/J    |  ⌥/K    |  ⌃/L    |  ⇧/;     |     '    |
+            // |---------+---------+--------+--------+---------+---------|       |-------+---------+---------+---------+----------+----------|
+            // |   ⇧/🌐  |  ^/Z    |    X   |   C    |    V    |    B    |       |   N   |    M    |    ,    |    .    |     /    |  `/⌥     |
+            // '---------------------------------+--------+----+---------+       |-------+---------+---------+-------------------------------'
+            //                                   |   ⌥    |   ⌘  |  L3/⏎ |       |  L2/␣ |  L1  |  L3/⌫  |
+            //                                   '--------+------+-------'       '-------+------+--------'
 
             label = "QWERTY";
             bindings = <
-&kp ESC                   &kp Q               &kp W               &kp E           &kp R       &kp T        &kp Y        &kp U       &kp I            &kp O               &kp P                 &kp LBKT
-&kp TAB                   &hm LEFT_SHIFT A    &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm RGUI F  &kp G        &kp H        &hm RGUI J  &hm RALT K       &hm RCTRL L         &hm RSHFT SEMI        &kp SQT
-&mt LEFT_SHIFT LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V       &kp B        &kp N        &kp M       &kp COMMA        &kp DOT             &kp FSLH              &kp GRAVE
+&kp ESC                   &kp Q               &kp W               &kp E           &kp R       &kp T        &kp Y        &kp U       &kp I            &kp O        &kp P           &kp LBKT
+&kp TAB                   &hm LEFT_SHIFT A    &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm RGUI F  &kp G        &kp H        &hm RGUI J  &hm RALT K       &hm RCTRL L  &hm RSHFT SEMI  &kp SQT
+&mt LEFT_SHIFT LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V       &kp B        &kp N        &kp M       &kp COMMA        &kp DOT      &kp FSLH        &kp GRAVE
                                                                   &kp LALT        &kp LGUI    &lt 2 RET    &lt 2 SPACE  &sl 1       &lt 3 BACKSPACE
             >;
         };
@@ -87,7 +86,7 @@
 
             label = "ADJUST";
             bindings = <
-&kp DOT         &kp N7  &kp N8  &kp N9  &kp LA(LC(T))     &kp LC(T)        &kp LA(LC(LG(Y)))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp HOME      &kp BACKSPACE
+&kp DOT         &kp N7  &kp N8  &kp N9  &kp LC(LG(T))     &kp LC(T)        &kp LA(LC(LG(Y)))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp HOME      &kp BACKSPACE
 &kp N0          &kp N4  &kp N5  &kp N6  &kp LA(D)         &kp LA(ENTER)    &kp LA(LC(LG(H)))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END       &trans
 &kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &kp LA(W)         &kp LC(SPACE)    &kp LS(LA(LEFT))   &kp LA(LS(RIGHT))   &kp LC(SEMI)    &trans           &kp LC(LEFT)  &kp LC(RIGHT)
                                 &trans  &kp LEFT_CONTROL  &trans           &trans             &trans
@@ -104,6 +103,7 @@
             // '------------------------+-----------+-----------+-----------+-----------+--------+-------+-------+---------------------------------'
             //                          |   Trans   |   Trans   |   Trans   |       Trans| Trans | Trans |
             //                          '-----------+-----------+-----------'       '-------+-------+-----'            label = "CONFIG";
+
             bindings = <
 &kp LA(LC(N1))  &kp LA(LC(N2))  &kp LA(LC(N3))  &kp LA(LC(N4))  &kp LA(LC(R))  &kp LA(LC(N5))    &kp C_VOLUME_UP    &trans  &trans  &trans  &bt BT_SEL 0  &bt BT_SEL 1
 &trans          &trans          &kp LA(LC(W))   &trans          &trans         &trans            &kp C_VOLUME_DOWN  &trans  &trans  &trans  &bt BT_SEL 2  &bt BT_SEL 3
