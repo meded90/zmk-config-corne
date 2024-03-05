@@ -46,10 +46,10 @@
 
             label = "QWERTY";
             bindings = <
-&kp ESC                   &kp Q               &kp W               &kp E           &kp R       &kp T        &kp Y        &kp U       &kp I            &kp O        &kp P           &kp LBKT
-&kp TAB                   &hm LEFT_SHIFT A    &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm RGUI F  &kp G        &kp H        &hm RGUI J  &hm RALT K       &hm RCTRL L  &hm RSHFT SEMI  &kp SQT
-&mt LEFT_SHIFT LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V       &kp B        &kp N        &kp M       &kp COMMA        &kp DOT      &kp FSLH        &kp GRAVE
-                                                                  &kp LALT        &kp LGUI    &lt 2 RET    &lt 2 SPACE  &sl 1       &lt 3 BACKSPACE
+&kp ESC                   &kp Q               &kp W               &kp E           &kp R       &kp T              &kp Y        &kp U       &kp I            &kp O        &kp P           &kp LBKT
+&kp TAB                   &hm LSHFT A         &hm LCTRL S         &hm LALT D      &hm RGUI F  &kp G              &kp H        &hm RGUI J  &hm RALT K       &hm RCTRL L  &hm RSHFT SEMI  &kp SQT
+&mt LEFT_SHIFT LG(SPACE)  &mt LEFT_CONTROL Z  &kp X               &kp C           &kp V       &kp B              &kp N        &kp M       &kp COMMA        &kp DOT      &kp FSLH        &kp GRAVE
+                                                                  &kp LALT        &kp LGUI    &lt 2 RET          &lt 2 SPACE  &sl 1       &lt 3 BACKSPACE
             >;
         };
 
@@ -75,20 +75,20 @@
 
         adjust_layer {
             // .----------------------------------------------------------------.       .-----------------------------------------------------------------.
-            // |   CMD+SHIFT+4  |       |   PU   |   UP   |    PD    |   HOME   |       |  HOME   |    PU    |    UP   |   PD    |          | CMD+SHIFT+4 |
-            // |----------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+----------+-------------|
-            // |                |       |  LEFT  |  DOWN  |   RIGHT  |   END    |       |  END    |   LEFT   |   DOWN  |  RIGHT  |          |             |
-            // |----------------+-------+--------+--------+----------+----------|       |---------+----------+---------+---------+----------+-------------|
-            // |     OUT_TOG    |       |        |        |CTRL+LEFT |CTRL+RIGHT|       |CTRL+LEFT|CTRL+RIGHT|         |         |          |   OUT_TOG   |
+            // |       .        |   7    |   8   |   9    |    ^⌘T   |    ^⌘T   |       |    ↑    |    ⌘◀    |    ▲    |    ⌘▶   |   HOME   |      ⌫      |
+            // |----------------+-------+-------+---------+----------+----------|       |---------+----------+---------+---------+----------+-------------|
+            // |       0        |  ⇧/4  |  ⌃/5   | ⌥/6    |  ⌘/ ⌥D   |   ^⌘T    |       |    ↓    |   ⌘/◀    |   ⌥/▼   |   ⌃/ ▶  |  ⇧/END   |             |
+            // |----------------+-------+-------+---------+----------+----------|       |---------+----------+---------+---------+----------+-------------|
+            // |       ⇧        |   1    |   2   |   3    |    ⌥W    |    ^␣    |       |   ⇧⌥◀   |    ⇧⌥▶   |    ^;   |         |    ^◀    |      ^▶     |
             // '---------------------------------+--------+----------+----------+       |---------+----------+---------+----------------------------------'
             //                                   |  GUI   |   MO3    |          |       |         |          |         |
             //                                   '--------+----------+----------'       '---------+----------+---------'
 
             label = "ADJUST";
             bindings = <
-&kp DOT         &kp N7  &kp N8  &kp N9  &kp LC(LG(T))     &kp LC(T)        &kp LA(LC(LG(Y)))  &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp HOME      &kp BACKSPACE
-&kp N0          &kp N4  &kp N5  &kp N6  &kp LA(D)         &kp LA(ENTER)    &kp LA(LC(LG(H)))  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END       &trans
-&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &kp LA(W)         &kp LC(SPACE)    &kp LS(LA(LEFT))   &kp LA(LS(RIGHT))   &kp LC(SEMI)    &trans           &kp LC(LEFT)  &kp LC(RIGHT)
+&kp DOT         &kp N7        &kp N8        &kp N9       &kp LC(LG(T))     &kp LC(T)        &kp LA(LC(LG(Y)))  &kp LG(LEFT_ARROW)       &kp UP_ARROW         &kp LG(RIGHT)          &kp HOME       &kp BACKSPACE
+&kp N0          &hm LSHFT N4  &hm LCTRL N5  &hm LALT N6  &hm RGUI LA(D)    &kp LA(ENTER)    &kp LA(LC(LG(H)))  &hm RGUI LEFT_ARROW      &hm RALT DOWN_ARROW  &hm RCTRL RIGHT_ARROW  &hm RSHFT END  &trans
+&kp LEFT_SHIFT  &kp N1        &kp N2        &kp N3       &kp LA(W)         &kp LC(SPACE)    &kp LS(LA(LEFT))   &kp LA(LS(RIGHT))        &kp LC(SEMI)         &trans                 &kp LC(LEFT)   &kp LC(RIGHT)
                                 &trans  &kp LEFT_CONTROL  &trans           &trans             &trans
             >;
         };
