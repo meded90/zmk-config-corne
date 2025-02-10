@@ -34,49 +34,49 @@
         compatible = "zmk,combos";
 
         ParaLeft {
-            bindings = <&kp LEFT_PARENTHESIS>;
+            bindings = <&kp LA(S)>;
             key-positions = <4 5>;
             timeout-ms = <20>;
         };
 
         ParaRight {
-            bindings = <&kp RIGHT_PARENTHESIS>;
+            bindings = <&kp LA(D)>;
             key-positions = <6 7>;
             timeout-ms = <20>;
         };
 
         BrakLeft {
-            bindings = <&kp LEFT_BRACKET>;
+            bindings = <&kp LA(LEFT_BRACKET)>;
             key-positions = <16 17>;
             timeout-ms = <20>;
         };
 
         BrakRight {
-            bindings = <&kp RIGHT_BRACKET>;
+            bindings = <&kp LA(J)>;
             key-positions = <18 19>;
             timeout-ms = <20>;
         };
 
         BraceLeft {
-            bindings = <&kp LEFT_BRACE>;
+            bindings = <&kp LA(LEFT_BRACE)>;
             key-positions = <28 29>;
             timeout-ms = <20>;
         };
 
         BraceRight {
-            bindings = <&kp RIGHT_BRACE>;
+            bindings = <&kp LA(RIGHT_BRACE)>;
             key-positions = <30 31>;
             timeout-ms = <20>;
         };
 
         DoubleQuote {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp LA(SQT)>;
             key-positions = <15 16>;
             timeout-ms = <20>;
         };
 
         SingleQuote {
-            bindings = <&kp APOSTROPHE>;
+            bindings = <&kp LA(SEMICOLON)>;
             key-positions = <19 20>;
             timeout-ms = <20>;
         };
@@ -103,37 +103,37 @@
         //};
 
         TildaSign {
-            bindings = <&kp TILDE>;
+            bindings = <&kp LA(TILDE)>;
             key-positions = <0 12>;
             timeout-ms = <20>;
         };
 
         GraveSign {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp LA(GRAVE)>;
             key-positions = <12 24>;
             timeout-ms = <20>;
         };
 
         MinusSign {
-            bindings = <&kp MINUS>;
+            bindings = <&kp LA(X)>;
             key-positions = <3 4>;
             timeout-ms = <20>;
         };
 
         PlusSign {
-            bindings = <&kp PLUS>;
+            bindings = <&kp LA(C)>;
             key-positions = <2 3>;
             timeout-ms = <20>;
         };
 
         UnderscoreSign {
-            bindings = <&kp UNDERSCORE>;
+            bindings = <&kp LA(UNDERSCORE)>;
             key-positions = <7 8>;
             timeout-ms = <20>;
         };
 
         PipeSign {
-            bindings = <&kp PIPE>;
+            bindings = <&kp LA(PIPE)>;
             key-positions = <8 9>;
             timeout-ms = <20>;
         };
