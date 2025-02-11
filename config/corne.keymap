@@ -137,6 +137,13 @@
             key-positions = <8 9>;
             timeout-ms = <20>;
         };
+
+        modify {
+            bindings = <&kp LG(LEFT_ALT)>;
+            key-positions = <40 41>;
+            layers = <0>;
+            timeout-ms = <20>;
+        };
     };
 
     keymap {
