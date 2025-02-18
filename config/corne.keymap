@@ -203,8 +203,8 @@
             label = "ADJUST";
             bindings = <
 &kp DOT         &kp N7  &kp N8  &kp N9  &kp LC(LG(T))     &kp LC(T)        &kp LA(LC(Y))     &kp LG(LEFT_ARROW)  &kp UP_ARROW    &kp LG(RIGHT)    &kp HOME      &kp BACKSPACE
-&kp N0          &kp N4  &kp N5  &kp N6  &kp LA(D)         &kp LA(ENTER)    &kp LA(LC(H))     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END       &trans
-&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &kp LA(W)         &kp LC(SPACE)    &kp LS(LA(LEFT))  &kp LA(LS(RIGHT))   &kp LC(SEMI)    &trans           &kp LC(LEFT)  &kp LC(RIGHT)
+&kp N0          &kp N4  &kp N5  &kp N6  &trans            &kp LA(ENTER)    &kp LA(LC(H))     &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END       &trans
+&kp LEFT_SHIFT  &kp N1  &kp N2  &kp N3  &trans            &kp LC(SPACE)    &kp LS(LA(LEFT))  &kp LA(LS(RIGHT))   &kp LC(SEMI)    &trans           &kp LC(LEFT)  &kp LC(RIGHT)
                                 &trans  &kp LEFT_CONTROL  &trans           &trans            &trans
             >;
         };
