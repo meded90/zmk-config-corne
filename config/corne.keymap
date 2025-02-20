@@ -144,6 +144,34 @@
             layers = <0>;
             timeout-ms = <20>;
         };
+
+        mode-left {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <39 40>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        modify-full-left {
+            bindings = <&kp LC(LG(LEFT_ALT))>;
+            key-positions = <39 40 41>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        modify-full-right {
+            bindings = <&kp LC(LG(LEFT_ALT))>;
+            key-positions = <36 37 38>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
+
+        modifay-left-right {
+            bindings = <&kp LC(LEFT_ALT)>;
+            key-positions = <37 38>;
+            timeout-ms = <20>;
+            layers = <0>;
+        };
     };
 
     keymap {
