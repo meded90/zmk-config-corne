@@ -27,7 +27,7 @@ layers:
       # В горизонтальной ориентации - `rows` строк по `columns` кнопок.
       # В вертикальной ориентации - `columns` строк по `rows` кнопок.
       # Каждая кнопка может быть комбинацией клавиш ('chord') или событием мыши 1234466
-      - ["cmd-alt-ctrl-y", "cmd-alt-ctrl-u", "cmd-alt-ctrl-b"] # yandex, chrome, next
+      - ["cmd-alt-ctrl-y", "cmd-alt-ctrl-u", "cmd-alt-ctrl-b"] # yandex, chrome, next track
       - [ "cmd-alt-ctrl-h", "cmd-alt-ctrl-i", "cmd-alt-ctrl-o"] # telegram, webstorm, Radix
     knobs:
       # Определение поведения ручек.
@@ -35,7 +35,7 @@ layers:
       # В вертикальной - сверху вниз.
       # Каждая ручка может поворачиваться против часовой стрелки (ccw) или по часовой (cw), а также нажиматься.
       - ccw: "volumedown"  # Уменьшение громкости
-        press: "cmd-alt-ctrl-v"  # Нажатие - отключение звука
+        press: "cmd-alt-ctrl-v"  # Нажатие - pause/resume
         cw: "volumeup"  # Увеличение громкости
 
 #  - buttons:
